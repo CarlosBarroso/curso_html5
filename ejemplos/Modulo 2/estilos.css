@@ -1,0 +1,41 @@
+
+p {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 1.5em;
+	font-family: Arial;
+	background-color: white;
+}
+
+.color1 {
+	color: olive;
+}
+
+.color2{
+	color: #080000;
+}
+
+.color3{
+	background-color: rgb(128, 128, 0)
+}
+
+.opaco{
+   opacity: 0.6;	
+}
+
+.tipografia{
+	letter-spacing: 2em;
+	line-height: 16px;
+	text-align: right;
+	text-decoration: underline;
+	text-transform: lowercase;
+}
+
+div.highlight{
+	height:  100px;
+	width: 500px;
+	padding : 10px;
+	border: 2px dotted blue;
+	margin: 25px 0 25px 0;
+	
+}

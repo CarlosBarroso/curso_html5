@@ -1,0 +1,36 @@
+
+
+h1{
+	font-size: 42px;
+	color: pink;	
+}
+
+.clase{
+	background-color: lightblue;
+}
+
+#identificador {
+	font-style: italic;
+}
+
+p.blue{
+	color: blue;	
+}
+
+section h2 {
+	color: red;
+}
+
+section > h2 {
+	color: green;
+}
+
+section + h2 {
+	background-color: black;
+	color: white;
+}
+
+.verde {
+	color: green important!;
+	background-color: blue;
+}
