@@ -1,0 +1,39 @@
+
+/*ejemplo de imagenes*/
+
+body{
+	background-image: url("background.jpg");
+	background-repeat: repeat-x;
+	background-size: cover;
+	/*background-repeat: repeat-y;*/
+	/*background-repeat: no-repeat;*/
+	/*-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-o-filter: blur(3px);
+	-ms-filter: blur(3px);
+	filter: blur(3px);*/
+}
+
+div{
+	margin-top: 100px;
+	margin-left: 100px;
+	width: 300px;
+	height: 300px;
+	opacity: 0.7;
+	background-color: lightblue;
+	border: 2px red;
+	display: block;
+}
+
+div.flechas{
+	background-image: url("flechas.jpg");
+	background-repeat: repeat-y;
+}
+
+.filtro {
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-o-filter: blur(3px);
+	-ms-filter: blur(3px);
+	filter: blur(3px);
+}
