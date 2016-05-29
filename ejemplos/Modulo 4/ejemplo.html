@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>ejemplo</title>
+		<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+		<script type="text/javascript" src="script.js" ></script>
+		<link rel="stylesheet" type="text/css" href="estilos.css" media="screen" />
+	
+	</head>
+<body>
+	<form name="formulario" action="xxx" method="post">
+		<fieldset>
+			<legend>datos de usuario</legend>
+			<div>
+				<label>usuario:</label>
+				<input type="text" placeholder="usuario" required autofocus   oninvalid="setCustomValidity('se te olvida esto')"/>
+				<br/>
+				<label>observaciones:</label>
+				<input type="text" placeholder="observaciones"  autocomplete/>
+				<br/>
+				<label>edad:</label>
+				<input type="number" placeholder="edad"  min="18" max="65" step="2"/>
+				<br/>
+				<label>categoía:</label>
+				<input type="text" placeholder="categoría" required list="listaCategoria"/>
+				<datalist id="listaCategoria">
+					<option value="normal"></option>
+					<option value="senior"></option>
+					<option value="reducida"></option>
+					<option value="vip"></option>
+					<option value="valor añadido"></option>
+					<option value="valor extra"></option>
+				</datalist>					
+				<br/>
+				<select>
+					<optgroup label="europeo">
+						<option value="españa">españa</option>
+						<option value="francia">francia</option>
+						<option value="italia">italia</option>
+					</optgroup>
+					<optgroup label="asiatico">
+						<option value="china">china</option>
+						<option value="japon">japón</option>
+					</optgroup>	
+				</select>
+				<br/>
+				<label>email:</label>
+				<input type="email"  placeholder="email"/>
+				<br/>
+				<label>url:</label>
+				<input type="url"  placeholder="url"/>
+				<br/>
+				<label>password:</label>
+				<input type="password"  placeholder="password" required/>
+			
+			
+		</fieldset>
+		<input type="submit"/>
+		<input type="reset" />
+	</form>
+	
+</body>

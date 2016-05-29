@@ -38,7 +38,7 @@ div.background{
 	height:80%;
 	background-color:white;
 	opacity: 0.6;
-	filter: blur(10px);
+	filter: blur(5px);
 	
 	background-image: url("flechas2.png");
 	background-size: 50px;
@@ -48,7 +48,8 @@ div.background{
 div.small{
 	
 	z-index: 100;
-	padding: 20px;
+	padding-left:  20px;
+	padding-top: 60px;
 	width: 60%;
 	height: 60%;
 	
@@ -58,6 +59,10 @@ div.flechas{
 	background-image: url("flechas2.png");
 	background-size: 30px;
 	background-repeat: repeat-y;
+}
+
+label{
+	padding-left: 50px;
 }
 
 .filtro {
