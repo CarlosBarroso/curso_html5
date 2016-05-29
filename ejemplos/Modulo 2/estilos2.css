@@ -3,7 +3,7 @@
 
 body{
 	background-image: url("background.jpg");
-	background-repeat: repeat-x;
+	background-repeat:no-repeat;
 	background-size: cover;
 	/*background-repeat: repeat-y;*/
 	/*background-repeat: no-repeat;*/
@@ -14,19 +14,49 @@ body{
 	filter: blur(3px);*/
 }
 
+div.base{
+	background-position: center top;
+	padding: 70px 90 px 120px 90px;
+}
+
+
+
 div{
-	margin-top: 100px;
-	margin-left: 100px;
-	width: 300px;
-	height: 300px;
-	opacity: 0.7;
-	background-color: lightblue;
-	border: 2px red;
-	display: block;
+	position: absolute; 
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	z-index: 99;
+	margin: auto; 
+}
+
+div.background{
+	
+	z-index: 99;
+	width: 80%;
+	height:80%;
+	background-color:white;
+	opacity: 0.6;
+	filter: blur(10px);
+	
+	background-image: url("flechas2.png");
+	background-size: 50px;
+	background-repeat: repeat-X;
+}
+
+div.small{
+	
+	z-index: 100;
+	padding: 20px;
+	width: 60%;
+	height: 60%;
+	
 }
 
 div.flechas{
-	background-image: url("flechas.jpg");
+	background-image: url("flechas2.png");
+	background-size: 30px;
 	background-repeat: repeat-y;
 }
 
