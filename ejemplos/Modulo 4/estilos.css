@@ -1,0 +1,17 @@
+
+
+input{
+	border: solid 3px #888;
+}
+
+input:required{
+	background-color:#f00;
+}
+
+input:invalid {
+	border-color: #f0f
+}
+
+input:valid {
+	border-color: #0f0
+}

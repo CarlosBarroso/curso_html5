@@ -3,7 +3,10 @@
 	<head>
 		<meta charset="utf-8"/>
 		<title>ejemplo</title>
-		<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+		<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   
+		          integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   
+				  crossorigin="anonymous">
+		</script>
 		<script type="text/javascript" src="script.js" ></script>
 		<link rel="stylesheet" type="text/css" href="estilos.css" media="screen" />
 	
@@ -14,16 +17,27 @@
 			<legend>datos de usuario</legend>
 			<div>
 				<label>usuario:</label>
-				<input type="text" placeholder="usuario" required autofocus   oninvalid="setCustomValidity('se te olvida esto')"/>
+				<input type="text" placeholder="usuario" 
+				       required  
+					   maxlength="10""  
+					   oninvalid="setCustomValidity('se te olvida esto')"/>
 				<br/>
 				<label>observaciones:</label>
-				<input type="text" placeholder="observaciones"  autocomplete/>
+				<input type="text" name="observaciones"
+				       placeholder="observaciones"  
+					   maxlength="50"
+					   autocomplete required
+					   title="añada alguna observación"/>
 				<br/>
 				<label>edad:</label>
-				<input type="number" placeholder="edad"  min="18" max="65" step="2"/>
+				<input type="number" 
+				       placeholder="edad"  
+					   min="18" max="65" step="2"/>
 				<br/>
 				<label>categoía:</label>
-				<input type="text" placeholder="categoría" required list="listaCategoria"/>
+				<input type="text" 
+				       placeholder="categoría" 
+					   required list="listaCategoria"/>
 				<datalist id="listaCategoria">
 					<option value="normal"></option>
 					<option value="senior"></option>
@@ -46,13 +60,22 @@
 				</select>
 				<br/>
 				<label>email:</label>
-				<input type="email"  placeholder="email"/>
+				<input type="email"  
+				       placeholder="email: usuario@dominio.com"
+					   autofocus/>
 				<br/>
 				<label>url:</label>
-				<input type="url"  placeholder="url"/>
+				<input type="url"  
+				       placeholder="url: http://www.dominio.com"/>
 				<br/>
 				<label>password:</label>
-				<input type="password"  placeholder="password" required/>
+				<input type="password"  
+				       placeholder="password" 
+					   required
+					   max=""
+					   pattern="[a-zA-Z0-9]{5,}"
+					   title="5 caracteres alfanuméricos"
+					   />
 			
 			
 		</fieldset>
