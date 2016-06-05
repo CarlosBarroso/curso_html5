@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>ejemplo</title>
+		<script type="text/javascript" src="script.js" ></script>
+		<link rel="stylesheet" type="text/css" href="estilos.css" media="screen" />
+	
+	</head>
+<body>
+	<h1>lectura de un fichero texto</h1>
+	<div>
+		<textarea id="ta" rows=10 cols=20>
+		</textarea>
+		<br/>
+		<input type="file" id="file1" onchange="leerFicheroTexto()"/>		
+	<br/>
+	
+	<h1>lectura de un fichero binario</h1>
+		<figure>
+			<img id="img" 
+				title="titulo imagen"
+				alt="titulo alterntativo"
+				src=""/>
+			<figcaption>imagen</figcaption>
+		</figure>
+		<input type="file" id="file2" onchange="leerFicheroBinario()"/>		
+	
+		<br/>
+	<br/>
+	
+</body>
+</html>
