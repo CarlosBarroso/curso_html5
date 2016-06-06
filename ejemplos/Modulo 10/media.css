@@ -1,0 +1,74 @@
+﻿body
+{
+}
+
+@media screen and (width:600px)
+{
+    p
+    {
+        font-size:60px;
+    }
+}
+
+
+@media screen and (width:500px)
+{
+    p
+    {
+        font-size:50px;
+    }
+}
+
+
+
+@media screen and (width:400px)
+{
+    p
+    {
+        font-size:40px;
+    }
+}
+
+
+
+@media screen and (width:300px)
+{
+    p
+    {
+        font-size:30px;
+    }
+}
+
+
+
+@media screen and (width:200px)
+{
+    p
+    {
+        font-size:20px;
+    }
+}
+
+
+@media screen and (width:100px)
+{
+    p
+    {
+        font-size:10px;
+    }
+}
+/*@media screen and (max-device-width:1600px)
+{
+    p
+    {
+        background-color: blue;
+    }
+}*/
+
+/*@media screen and (max-device-width:1024px)
+{
+    p
+    {
+        background-color: green;
+    }
+}*/
