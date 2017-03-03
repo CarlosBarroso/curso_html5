@@ -1,0 +1,26 @@
+﻿body {
+}
+
+#parent {
+
+    position:static;
+    top:100px;
+    right:100px;
+    
+    perspective: 300px;
+    perspective-origin: -100px -50px;
+}
+
+#child1 {
+    background-color: orange;
+    /*position: absolute;*/
+    transform-origin: 0px 0px;
+    transform: rotateY(30deg);
+}
+
+#child2 {
+    background-color: orange;
+    /*position: absolute;*/
+    transform-origin: 0px 0px;
+    transform: rotateY(30deg) translate(250px);
+}

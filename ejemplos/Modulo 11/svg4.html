@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <svg xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="def1"
+                x1="0%" y1="0%"
+                x2="100%" y2="0%">
+                <stop offset="0.2" stop-color="yellow" />
+                <stop offset="0.5" stop-color="green" />
+                <stop offset="1.0" stop-color="red" />
+            </linearGradient>
+
+            <radialGradient id="def2"
+                fx="0.3" fy="0.3">
+                <stop offset="0.1" stop-color="yellow" />
+                <stop offset="0.7" stop-color="red" />
+            </radialGradient>
+        </defs>
+
+        <path id="pathId"
+            fill="none" stroke="green" stroke-width="5"
+            d="M 50 250
+            C 150 1050 250 50 350 150
+            C 450 250 550 350 650 250
+            C 750 150 850 150 850 150" />
+
+        <text x="20" y="50"
+            fill="url(#def1)"
+            stroke="purple" stroke-width="2"
+            font-size="36" font-family="verdana"
+            font-weight="bold"
+            text-decoration="line-through"
+            >
+
+            <textPath xlink:href="#pathId">
+                Hola Mundo!! este es un texto un poco más largo.
+            </textPath>
+
+        </text>
+
+    </svg>
+</body>
+</html>

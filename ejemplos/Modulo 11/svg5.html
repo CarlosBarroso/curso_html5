@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <pattern id="cuadrados"
+                width="80" height="80"
+                patternUnits="userSpaceOnUse">
+                <rect fill="red" x="0" y="0" width="40" height="40" />
+                <rect fill="blue" x="40" y="0" width="40" height="40" />
+                <rect fill="blue" x="0" y="40" width="40" height="40" />
+                <rect fill="red" x="40" y="40" width="40" height="40" />
+            </pattern>
+        </defs>
+        <rect x="0" y="0" width="200" height="200"
+            fill="url(#cuadrados)" stroke="orange" stroke-width="5" />
+        <g transform="translate(200, 200)">
+            <g transform="scale(0.5)">
+                <g transform="rotate(20, 260, 160)">
+                    <rect x="0" y="0" width="200" height="200"
+                        fill="url(#cuadrados)" stroke="orange" stroke-width="5" />
+                </g>
+            </g>
+        </g>
+
+
+    </svg>
+</body>
+</html>
